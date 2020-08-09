@@ -1,3 +1,4 @@
+// todo: needs modification
 const logger = {
   error: (errorCode, ...text: any[]) => {
     if (!console) { return }
