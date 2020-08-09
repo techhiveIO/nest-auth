@@ -1,0 +1,50 @@
+{
+  "name": "nest-auth",
+  "version": "0.0.0",
+  "description": "Nest Auth",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "precommit": "lint-staged",
+    "prepublish:npm": "npm run build",
+    "publish:npm": "npm publish",
+    "test": "ts-node -r tsconfig-paths/register test/TestClient.ts"
+  },
+  "peerDependencies": {
+    "@nestjs/common": "^7.4.2",
+    "@nestjs/core": "^7.4.2"
+  },
+  "devDependencies": {
+    "@nestjs/common": "^7.4.2",
+    "@nestjs/core": "^7.4.2",
+    "@types/lodash": "^4.14.159",
+    "@types/node": "^14.0.27",
+    "@types/reflect-metadata": "^0.1.0",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
+    "prettier": "^2.0.5",
+    "ts-node": "^8.10.2",
+    "tsconfig-paths": "^3.9.0",
+    "typescript": "^3.9.7"
+  },
+  "lint-staged": {
+    "*.ts": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/techhiveIO/nest-auth.git"
+  },
+  "keywords": [
+    "nestjs",
+    "nest"
+  ],
+  "author": "TechHive.IO LLC",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/techhiveIO/nest-auth/issues"
+  },
+  "homepage": "https://github.com/techhiveIO/nest-auth#readme"
+}
